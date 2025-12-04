@@ -1,0 +1,43 @@
+<div class="page">
+  <header class="header">
+
+    <h1>{{nombreProyecto()}}</h1>
+    <p class="subtitle">{{descripcion}}</p>
+    <p class="autor">Autor: <strong>{{autor}}</strong></p>
+  </header>
+
+  <main class ="main">
+    <section class="card">
+      <h2>Sobre el proyecto</h2>
+      <p>
+        Esta aplicacion permite introducir títulos de peliculas y mantener un pequeño listado. Es un ejemplo sencillo para 
+        practicar componentes, binding y formularios en Angular.
+      </p>
+      <ul>
+        <li>Componente raiz: App</li>
+        <li>Componente de lista: Peliculas</li>
+        <li>Uso de ngModel y eventos click</li>
+      </ul>
+
+      <hr />
+
+      <app-peliculas></app-peliculas>
+    </section>
+  </main>
+
+  <footer class ="footer">
+    <p>Practica de Angular - {{autor}}</p>
+  </footer>
+  
+  <router-outlet />
+
+</div>  
+  
+  
+  
+
+
+
+
+
+

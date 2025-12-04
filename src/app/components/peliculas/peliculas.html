@@ -1,0 +1,24 @@
+
+<div class="peliculas">
+
+    <h2>Listado Peliculas</h2>
+
+    <ul>
+        @for (pelicula of peliculas; track pelicula) {
+            <li> {{pelicula}}</li>
+            }@empty {
+                <li>No hay peliculas registradas</li>
+            }
+    </ul>
+        @if (nuevaPelicula) {
+            <h4 class ="preview">
+                Proxima a añadir:<span>{{nuevaPelicula}}</span>
+            </h4>
+        }
+    <div class="form-nueva">
+    <input [(ngModel)] = "nuevaPelicula" type="text" placeholder="Introduce una nueva pelicula"/>
+    
+    <button (click)= "addPelicula()">Introducir</button>
+    
+    </div>
+</div>

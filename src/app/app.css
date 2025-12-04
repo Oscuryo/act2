@@ -1,0 +1,46 @@
+.page{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: rgb(216, 214, 214);
+    color: black;
+    padding: 1.5rem;
+    box-sizing: border-box;
+}
+
+.header{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.header h1{
+    margin: 0;
+    font-size: 2rem;
+}
+
+.autor{
+    margin: 0.25rem;
+    color: rgb(2, 2, 2);
+}
+
+.main{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    width: 100%;
+    max-width: 960px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    box-shadow: rgb(rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0)) ;
+}
+
+.footer{
+    text-align: center;
+    margin-top: 2rem;
+    color: rgb(161, 161, 161);
+}
